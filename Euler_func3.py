@@ -1,7 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import array as arr
-
 # In this part, the implementation of newton's gravity model will be combined with atmospheric drag
 # so, rather than using the constant gravity of -9.8 as followed a(t) = -10+Cd*dair*v^2*Cs/2/Mapple, 
 # a(t) = -G*mEarth/(ydrag[i]+rEarth)**2+Cd*dair*vdrag[i]**2*Cs/2/Mapple. 
@@ -10,6 +6,10 @@ import array as arr
 # and compare the result with the constant gravity model
 # in the code, variables ydrag and vdrag are used to store the value of the model considering atm. drag,
 # so later we can compare the result
+
+import numpy as np
+import matplotlib.pyplot as plt
+import array as arr
 
 def euler_m(n,t,y,ydrag,vdrag,dt):
     Cd = 0.5
