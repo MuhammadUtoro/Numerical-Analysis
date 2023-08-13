@@ -1,11 +1,11 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import array as arr
-
 # In this part, the implementation of newton's gravity model will be combined with atmospheric drag
 # so, rather than using the constant gravity of -9.8 as followed a(t) = -10+Cd*dair*v^2*Cs/2/Mapple, 
 # a(t) = -G*mEarth/(ydrag[i]+rEarth)**2+Cd*dair*vdrag[i]**2*Cs/2/Mapple. 
 # where Cd = drag coefficient, dair = air density, Cs = cross-sectional area and v = velocity
+
+import numpy as np
+import matplotlib.pyplot as plt
+import array as arr
 
 Cd = 0.5
 dair = 1.4
