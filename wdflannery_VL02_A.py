@@ -1,13 +1,13 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import array as arr 
-
 # Continued section to model the atmospheric drag on an apple
 # Using the same program with the previous but added more constants 
 # They are gravitational constant (G), earth's mass (M), earth radius (R)
 # This due to the cause that Newton's Gravitational Equation is Fg = G.Mobject.Mearth/R^2
 # Newton's second law states that F = m.a, then we substitute the F with Fg, so in the case with the apple
 # G.Mearth.Mapple/R^2 = Mapple.A, A(t) = G.Mearth/(p(t) + R)^2
+
+import numpy as np
+import matplotlib.pyplot as plt
+import array as arr 
 
 G = 6.7e-11 # Gravitational Constant
 mEarth = 5.97e24 # Earth's mass
