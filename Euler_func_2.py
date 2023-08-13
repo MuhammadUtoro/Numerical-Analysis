@@ -36,5 +36,4 @@ inp_t0 = float(input("Enter initial condition (t0): "))
 inp_y0 = float(input("Enter initial condition (y0): "))
 inp_v0 = float(input("Enter initial condition (v0): "))
 inp_dt = float(input("Enter the time step (dt): "))
-
 t,y,v = euler_m(inp_n, inp_t0, inp_y0, inp_v0, inp_dt)
