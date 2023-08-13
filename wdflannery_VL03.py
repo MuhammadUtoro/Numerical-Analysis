@@ -1,11 +1,11 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import array as arr
-
 # In this part, two different approaches to calculate the a(t) will be compared.
 # First is the constant gravity model and drag model
 # a(t) = -10+Cd*dair*v^2*Cs/2/Mapple, Cd = drag coefficient, dair = air density, Cs = cross-sectional area
 # and v = velocity
+
+import numpy as np
+import matplotlib.pyplot as plt
+import array as arr
 
 Cd = 0.5
 dair = 1.4
