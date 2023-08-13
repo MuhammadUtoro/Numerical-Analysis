@@ -1,12 +1,13 @@
 # Orbits. two-body problem in 2D. Modelling orbital motion
-import numpy as np
-import matplotlib.pyplot as plt
 
 # Initializing constants and allocating state variables
 # The space station orbits the earth with altitude of 402 km, velocity of 7706 m/s and period of 96 minutes
 # In this case, the accuracy of the orbit depends on the length of sub-interval, as does other problems
 # smaller the dt will result in more accurate (it will be almost exactly circular plot) therefore the 
 # number of sub-interval must also be high.
+
+import numpy as np
+import matplotlib.pyplot as plt
 
 rEarth = 6.378e6 # Earth's radius
 mEarth = 5.9742e24 # Earth's mass
