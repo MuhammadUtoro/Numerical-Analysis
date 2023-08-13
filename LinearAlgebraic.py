@@ -1,3 +1,5 @@
+# Using a scipy module for linear algebra (matrix) calculation
+
 import numpy as np
 from scipy.linalg import eig
 
