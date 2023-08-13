@@ -3,6 +3,7 @@
 # In this program, I'd like to use matrix as well in comparison to previous section
 # Simulating moon's orbit around the earth and simulating earth orbit around the sun
 # The numbers provided below are not the astronomical numbers as they are complicated to debug
+# Unfortunately, I haven't figured it out the solution for this exercise
 
 import numpy as np
 
