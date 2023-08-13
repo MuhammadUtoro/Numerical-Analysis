@@ -1,9 +1,9 @@
+# Euler's Method for computing object position at some time 't'
+# v(t) = -9.8*t
+
 import numpy as np
 import matplotlib.pyplot as plt
 import array as arr
-
-# Euler's Method for computing object position at some time 't'
-# v(t) = -9.8*t
 
 y = np.zeros(21) # Preallocating array to store the y/position value
 t = np.zeros(21) # Preallocating array to store the time value
