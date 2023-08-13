@@ -1,9 +1,9 @@
+# Implementing function for Euler's method using Newton's gravitational model
+# For complete explanation see wdflannery_VL01_A.py
+
 import numpy as np
 import matplotlib.pyplot as plt
 import array as arr
-
-# Implementing function for Euler's method using Newton's gravitational model
-# For complete explanation see wdflannery_VL01_A.py
 
 def euler_m(n,t,y,v,dt):
     G = 6.7e-11 # Gravitational Constant
