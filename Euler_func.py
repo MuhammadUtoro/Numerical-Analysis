@@ -1,8 +1,8 @@
+# Implementing function for Euler's method, assuming that the v(t) = -9.81*t
+
 import numpy as np
 import matplotlib.pyplot as plt
 import array as arr
-
-# Implementing function for Euler's method, assuming that the v(t) = -9.81*t
 
 def euler_m(n,t,y,dt):
     n = inp_n
