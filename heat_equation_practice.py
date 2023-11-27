@@ -3,9 +3,10 @@ import math
 import matplotlib
 from matplotlib import pyplot as mplot
 
-# Practicing the 1D heat equation with fourth-order approximation for the spatial derivative
+# Practicing the 1D heat equation with fourth-order approximation for the spatial derivative using explicit method
 # using the same input with the previous example
 # This practice is part of lecture from Sebastian Thomas - An Intro to Computational Fluid Dynamics
+
 
 def fourth_order_app(deltaT, numX, alpha, tMax, temp1, temp2):
     deltaX = 1.0/(numX-1)
@@ -36,6 +37,7 @@ def fourth_order_app(deltaT, numX, alpha, tMax, temp1, temp2):
         if count in pauseTimeSteps:
             index = np.where(pauseTimeSteps == count)
             mplot.plot(x,y,'-', label='%s%% of tMax' %pausePercentages[index][0],linewidth=3)
+            
     mplot.plot(x,y,'-', label='Initial Condition',linewidth=3)
     mplot.title('Temperature Distribution across Time', fontsize=24)
     mplot.xlim(0,1)
