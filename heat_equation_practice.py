@@ -13,6 +13,7 @@ def fourth_order_app(deltaT, numX, alpha, tMax, temp1, temp2):
 
     #The constants of proportionality
     C = alpha*deltaT/(12*(deltaX*deltaX))
+    # C = alpha*deltaT/(deltaX*deltaX)
 
     #Initial Condition
     x = np.linspace(0,1,numX)
