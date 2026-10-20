@@ -16,12 +16,12 @@ int main() {
   double L; // length of the bar
 
   // We set the value
-  alpha = 0.3;
+  alpha = 0.1;
   num_mesh = 101;
   L = 1.0;
   dx = L/(num_mesh - 1);
-  dt = 0.000024;
-  c = (alpha*dt)/(12*dx*dx);
+  dt = 0.00002;
+  c = (alpha*dt)/(12*(dx*dx));
   tend = 2.0;
   int steps = static_cast<int>(tend/dt);
 
@@ -48,7 +48,7 @@ int main() {
   for (int n=0; n<steps; n++) {
     for (int i=2; i<num_mesh-2; i++){
       (*next)[i] = (*curr)[i] + c * (
-          - (*curr)[i+2] + 16*(*curr)[i+1] - 30*(*curr)[i] + 16*(*curr)[i-1] - (*curr)[i-2]
+          - 1*(*curr)[i+2] + 16*(*curr)[i+1] - 30*(*curr)[i] + 16*(*curr)[i-1] - 1*(*curr)[i-2]
           );
     }
 
