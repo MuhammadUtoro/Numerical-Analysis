@@ -12,7 +12,7 @@ int main() {
   double L = 1.0; // length of the string
   double c = 1.0; // speed of the wave
   double dx = L / num; // distance between spatial mesh
-  double dt = 0.000024; // temporal mesh
+  double dt = 0.00024; // temporal mesh
   
   double tmax = 2.0;
   int steps = static_cast<int>(tmax/dt); // time-step
@@ -29,7 +29,7 @@ int main() {
   // Initial displacement
   for (int i = 0; i<num; i++) {
     double x = i*dx;
-    u_prev[i] = std::sin(M_PI * x/L);
+    u_prev[i] = std::sin(2*M_PI * x/L);
   }
 
   // Fixed endpoints
@@ -37,7 +37,7 @@ int main() {
   u_prev[num] = 0.0;
 
   // Initial velocity 
-  std::vector<double> v(num+1, 50);
+  std::vector<double> v(num+1, 5);
   
   // Calculate the first step
   u[0] = 0.0;
